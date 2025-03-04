@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aditya Umesh Sirsam - Portfolio</title>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+            overflow-x: hidden;
+        }
+        header {
+            background: #1f1f1f;
+            color: white;
+            text-align: center;
+            padding: 30px 20px;
+            font-size: 24px;
+            font-weight: bold;
+            animation: fadeIn 1s ease-in-out;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background: #333;
+            padding: 10px 0;
+            animation: slideIn 1s ease-in-out;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+        }
+        nav ul li {
+            margin: 0 20px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 40px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            animation: fadeInUp 1s ease-in-out;
+        }
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            animation: fadeIn 1s ease-in-out;
+        }
+        .section {
+            margin-bottom: 40px;
+            animation: fadeInUp 1s ease-in-out;
+        }
+        .about-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+            animation: slideInLeft 1.5s ease-in-out;
+        }
+        .profile-pic {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid #007BFF;
+            animation: fadeIn 2s ease-in-out;
+        }
+        .about-text {
+            max-width: 600px;
+            animation: fadeIn 2s ease-in-out;
+        }
+        .project, .skills ul, .certifications ul, .experience ul, .blogs ul {
+            background: #f9f9f9;
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 15px;
+            animation: slideUp 1.5s ease-in-out;
+        }
+        .skills ul, .certifications ul, .experience ul, .blogs ul {
+            list-style: none;
+            padding: 0;
+            text-align: center;
+        }
+        .skills ul li, .certifications ul li, .experience ul li, .blogs ul li {
+            display: inline-block;
+            background: #007BFF;
+            color: white;
+            padding: 8px 15px;
+            border-radius: 5px;
+            margin: 5px;
+            font-weight: bold;
+            animation: slideUp 1.5s ease-in-out;
+        }
+        .contact-form {
+            text-align: center;
+            animation: slideInRight 1.5s ease-in-out;
+        }
+        input, textarea {
+            width: 80%;
+            padding: 10px;
+            margin-top: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            animation: slideInRight 2s ease-in-out;
+        }
+        button {
+            background: #007BFF;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            transition: background 0.3s;
+            animation: fadeIn 2s ease-in-out;
+        }
+        button:hover {
+            background: #0056b3;
+        }
+        footer {
+            background: #222;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin-top: 40px;
+            animation: fadeIn 2s ease-in-out;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        @keyframes slideIn {
+            from { transform: translateY(-20px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+        @keyframes slideInLeft {
+            from { transform: translateX(-100%); opacity: 0; }
+            to { transform: translateX(0); opacity: 1; }
+        }
+        @keyframes slideInRight {
+            from { transform: translateX(100%); opacity: 0; }
+            to { transform: translateX(0); opacity: 1; }
+        }
+        @keyframes slideUp {
+            from { transform: translateY(100%); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        Aditya Umesh Sirsam - DevOps & Cloud Engineer
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#certifications">Certifications</a></li>
+            <li><a href="#blogs">Blogs</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="container section" id="about">
+        <h2>About Me</h2>
+        <div class="about-container">
+            <img src="profile.jpg" alt="Profile Picture" class="profile-pic">
+            <div class="about-text">
+                <p>Welcome! I am Aditya Umesh Sirsam, a passionate DevOps & Cloud Engineer specializing in AWS, Kubernetes, and CI/CD automation. I have experience deploying scalable infrastructure and automating workflows for efficient cloud-based applications.</p>
+            </div>
+        </div>
+    </div>
+    <div class="container section" id="projects">
+        <h2>Projects</h2>
+        <div class="project">Scalable Django Deployment on AWS</div>
+        <div class="project">MERN Stack Deployment on Kubernetes</div>
+        <div class="project">Django Application on Kubernetes</div>
+        <div class="project">Jenkins CI/CD Pipeline</div>
+        <div class="project">Food Ordering System</div>
+        <div class="project">Static Website on AWS S3</div>
+    </div>
+    <div class="container section" id="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li>AWS</li>
+            <li>Kubernetes</li>
+            <li>Docker</li>
+            <li>Jenkins CI/CD</li>
+            <li>Python</li>
+            <li>Linux</li>
+            <li>Git & Ansible</li>
+            <li>React.js, Vue.js, Django</li>
+            <li>MySQL, MongoDB</li>
+        </ul>
+    </div>
+    <div class="container section" id="experience">
+        <h2>Work Experience</h2>
+        <ul>
+            <li>Cloud Computing Internship - Azure Skynet Pvt Ltd</li>
+        </ul>
+    </div>
+    <div class="container section" id="certifications">
+        <h2>Certifications</h2>
+        <ul>
+            <li>AWS Cloud Practitioner</li>
+        </ul>
+    </div>
+    <div class="container section" id="blogs">
+        <h2>Blogs</h2>
+        <ul>
+            <li><a href="https://yourblog.com/post1">Understanding Kubernetes: A Deep Dive</a></li>
+            <li><a href="https://yourblog.com/post2">CI/CD Best Practices for Modern DevOps</a></li>
+            <li><a href="https://yourblog.com/post3">AWS Solutions Architect Tips and Tricks</a></li>
+        </ul>
+    </div>
+    <div class="container section contact-form" id="contact">
+        <h2>Contact Me</h2>
+        <form id="contact-form">
+            <input type="text" id="name" name="name" placeholder="Your Name" required>
+            <input type="email" id="email" name="email" placeholder="Your Email" required
